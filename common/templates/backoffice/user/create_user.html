@@ -1,0 +1,31 @@
+{% extends 'backoffice/layout/filter_panel.html' %}
+{% load staticfiles  book_tags%}
+{% block panelHeader %}
+<h3>订单数据导出</h3>
+{% endblock %}
+{% block filter %}
+<form encType="multipart/form-data" class="form-inline d-flex flex-row justify-content-start align-items-end" method="post">
+<div class="form-group">
+   <label class="sr-only control-label"></label>
+   <input type="file" name="fileContent" id="fileContent">
+   </div>
+<button type="submit" class="btn btn-default">提交</button>
+</form>
+{% endblock %}
+{% block content %}
+<div class="dataTables_wrapper form-inline no-footer">
+   <div class="row" id="DownLoadPages">
+      <div class="x_panel">
+          <div class="x_content">
+              <div class="col-md-12 col-sm-12  text-center">
+                   <ul class="pagination pagination-split">
+                       <li style="font-size: 18px; font-weight:600">
+                           选择完文件，点击提交即可
+                       </li>
+                   </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+{% endblock %}
