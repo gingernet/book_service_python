@@ -156,7 +156,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 REST_FRAMEWORK = {
     'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.AutoSchema'
 }
-LOGIN_REDIRECT_URL = "user_list"
+LOGIN_REDIRECT_URL = "/user/user_list"
 
 try:
     from .local_settings import *

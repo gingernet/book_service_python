@@ -160,7 +160,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 APPEND_SLASH = False
-LOGIN_REDIRECT_URL = "user_list"
+LOGIN_REDIRECT_URL = "/user/user_list"
 
 try:
     from .local_settings import *
